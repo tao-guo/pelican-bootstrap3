@@ -10,7 +10,7 @@
 
 {% block content %}
     <section id="content">
-        <h1>Archives for {{ SITENAME }}</h1>
+        <h1>{{ {'en':'Archives for '+SITENAME, 'zh':'存档列表'}[DEFAULT_LANG] }}</h1>
 
         <dl>
             {% for article in dates %}
