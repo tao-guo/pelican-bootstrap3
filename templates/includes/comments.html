@@ -9,7 +9,7 @@
             {% if not DISQUS_NO_ID %}
             var disqus_identifier = '{{ article.date|strftime('%Y-%m-') ~ article.slug if DISQUS_ID_PREFIX_SLUG else article.slug }}';
             {% endif %}
-            var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+            var disqus_url = '{{ SITEURL_FOR_DISQUS }}/{{ DEFAULT_LANG }}/{{ article.url }}';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function () {
